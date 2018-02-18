@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<!--Brandon Jimenez
+	contact_us.html
+	Final Project
+	Info 1311 WW
+	Rosas
+	May 17, 2017
+-->
+
+<head>
+<title>The Downtown Diner</title>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<link href="the_downtown_diner_screen.css" rel="stylesheet"	media="screen">
+<link href="the_downtown_diner_print.css" rel="stylesheet"	media="print">
+</head>
+
+<body>
+<div id="wrapper">
+<header><img src="DowntownDiner_banner.jpg" alt="The Downtown Diner" style="width: 1080px; height: 200px;"></header>
+
+<nav>
+	<ul>
+		<li><a href="home_page.html">Home</a></li>
+		<li><a href="history_page.html">History</a></li>
+		<li><a href="specials.html">Specials</a></li>
+		<li><a href="contact_us.html">Contact Us</a></li>
+	</ul>
+</nav>
+<main>
+<h1>Leave us a question or comment!</h1>
+	<form>
+		<label>First Name:</label><br>
+			<input type="text" name="firstname" id="firstname"><br><br>
+		<label>Last Name:</label><br>
+			<input type="text" name="lastname" id="lastname"><br><br>
+		<label>E-mail:</label><br>
+			<input type="text" name="email" id="email"><br><br>
+		<label>Phone Number:</label><br>
+			<input type="text" name="phonenumber" id="phonenumber"><br><br>
+	</form>
+	<form>
+		<label>Select your preferred contact method:</label><br>
+		<select size="1" name="jumpmenu" id="jumpmenu">
+			<option disabled selected value>-- select an option --</option>
+			<option value="phone">Phone</option>
+			<option value="email">E-Mail</option>
+		</select>
+	</form>
+	<form>
+	<label>What is your question or comment?</label><br>
+		<textarea name="question" id="question" cols="60" rows="4">Enter your text here</textarea><br><br>
+	</form>
+	<br>
+	<form method="post" action="https://www.mccinfo.net/webresources/cgi-bin/formmail.asp">
+		<input id="Submit" type="Submit" value="Submit">
+		<input id="reset" type="reset" value="Reset">
+		<input name="recipient" type="hidden" value="grosas@mccneb.edu">
+		<input type="hidden" name="subject" value="INFO1311 Final Project Brandon Jimenez">
+		<input name="required" type="hidden" value="email,firstname,lastname,phonenumber,question,jumpmenu">
+		<input name="return_link_url" type="hidden" value="http://student.mccinfo.net/~bajimenez/project/form_return.html">
+		<input name="return_link_title" type="hidden" value="The Downtown Diner">
+		<input name="bgcolor" type="hidden" value="#45bfa8">
+		<input name="title" type="hidden" value="Thank you for taking the time to complete the form.">
+		<input type="hidden" name="text_color" value="#000000">
+		<input name="font_face" type="hidden" value="Helvetica">
+		<input name="font_size" type="hidden" value="6">
+	</form>
+</main>
+<footer>
+	<ul>
+		<li><a href="home_page.html">Home</a></li>
+		<li><a href="history_page.html">History</a></li>
+		<li><a href="specials.html">Specials</a></li>
+		<li><a href="contact_us.html">Contact Us</a></li>
+	</ul>
+	<br>
+	Copyright &copy; 2017 The Downtown Diner<br>
+	Created by <a href="mailto:bajimenez@mail.mccneb.edu">Brandon Jimenez</a>
+</footer>
+</div>
+</body>
+</html>
